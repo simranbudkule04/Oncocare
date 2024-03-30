@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: left; /* Center align the content horizontally */
+            font-family: 'Poppins', sans-serif; /* Set the font family */
+            color: #09376e; /* Text color */
+             background-image: url('bg.jpg'); /* Replace 'your-background-image.jpg' with the actual image file path */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center center; /* Center the image both horizontally and vertically */
+            background-attachment: fixed; /* Fixed background */
+
+		 text-align: left;
+	}
+        header {
+            display: flex;
+            justify-content: space-between;
+	font-family: 'Poppins', sans-serif;
+            align-items: center;
+            padding: 10px 20px;
+             background-color: rgba(0, 123, 255, 0.5); /* Blue bar background color */
+border-radius: 10px;
+
+        }
+        .centered-image {
+            max-width: 100%;
+            border: 5px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+		width: 120px;
+		height: 60px;
+        }
+        .login-button {
+            background-color: #191D88;
+            color: #fff;
+		font-family: Poppins;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            text-align: left;
+            padding: 30px;
+padding-top: 200px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    <script>
+        // JavaScript to add the 'loaded' class to the image after it's loaded
+        window.addEventListener('load', function() {
+            document.querySelector('.centered-image').classList.add('loaded');
+        });
+
+        // JavaScript function to navigate to the login page
+        function openLoginPage() {
+            window.location.href = 'login.php';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Centered Image" class="centered-image">
+        <button class="login-button" onclick="openLoginPage()">Login</button>
+    </header>
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main webpage content. It has a light blue gradient background.</p>
+    </div>
+</body>
+</html>
